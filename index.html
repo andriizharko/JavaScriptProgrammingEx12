@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="app.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .form,
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        .container {
+            align-items: center;
+        }
+
+        .form button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName">
+        <button>Submit</button>
+    </form>
+    <div class="container">
+        <div id="firstName"></div>
+        <div id="lastName"></div>
+    </div>
+</body>
+
+</html>
